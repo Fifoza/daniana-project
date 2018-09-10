@@ -36,8 +36,11 @@ This a Team Project. It include to follow people:
   * Push feature branch to remote every next time:
     * git push origin new-feature
 
-  * After feature is done:
+  * After feature is done, merge feature to master:
     * git checkout master
     * git pull
-    * git pull origin feature-name
-    * git push
+    * git checkout test
+    * git pull
+    * git rebase -i master
+    * git checkout master
+    * git merge test
